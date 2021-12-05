@@ -1,22 +1,22 @@
-type IOption = {
+type INetwork = {
   name: string;
   apy: number;
   type: 'COMPOUND' | 'AVAE' | 'CURVE';
 };
 
-export const options: IOption[] = [
+export const NETWORKS: INetwork[] = [
   {
-    name: 'Compound',
+    name: 'COMPOUND',
     apy: 5,
     type: 'COMPOUND',
   },
   {
-    name: 'Aave',
+    name: 'AAVE',
     apy: 3,
     type: 'AVAE',
   },
   {
-    name: 'Curve',
+    name: 'CURVE',
     apy: 2.5,
     type: 'CURVE',
   },

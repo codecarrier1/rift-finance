@@ -8,6 +8,7 @@ type InputProps = {
   id?: string;
   name?: string;
   placeholder?: string;
+  disabled?: boolean;
 };
 
 export const Input: FC<InputProps> = ({
@@ -18,6 +19,7 @@ export const Input: FC<InputProps> = ({
   id = '',
   name = '',
   placeholder = '',
+  disabled = false,
 }) => {
   return (
     <input
@@ -28,6 +30,7 @@ export const Input: FC<InputProps> = ({
       id={id}
       name={name}
       placeholder={placeholder}
+      disabled={disabled}
     />
   );
 };
