@@ -6,7 +6,7 @@ import Body from './Body';
 
 function App() {
   return (
-    <div id='body'>
+    <div className='flex flex-col h-full'>
       <Header />
       <Body />
     </div>
