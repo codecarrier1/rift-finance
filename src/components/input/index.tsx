@@ -13,7 +13,7 @@ type InputProps = {
 export const Input: FC<InputProps> = ({
   value,
   onChange,
-  className,
+  className = '',
   type,
   id = '',
   name = '',
@@ -21,7 +21,7 @@ export const Input: FC<InputProps> = ({
 }) => {
   return (
     <input
-      className={`${className} px-7 py-4 bg-gray-300 text-lg leading-6 rounded-lg w-full`}
+      className={`${className} px-4 py-2 bg-gray-300 text-lg leading-6 rounded-lg w-full text-black`}
       value={value}
       type={type}
       onChange={(e) => onChange(e.target.value)}
