@@ -28,7 +28,7 @@ const Body: React.FC = () => {
     NETWORKS.forEach((network) => {
       const interest =
         (network.apy * days * userState[network.name].deposited) / 365 / 100;
-      console.log({ interest });
+
       setUserState((prevState) => ({
         ...prevState,
         [network.name]: {
