@@ -26,7 +26,8 @@ const Body: React.FC = () => {
 
   const handleProgressDays = (days: number) => {
     NETWORKS.forEach((network) => {
-      const interest = (network.apy * days) / 365 / 100;
+      const interest =
+        (network.apy * days * userState[network.name].deposited) / 365 / 100;
       console.log({ interest });
       setUserState((prevState) => ({
         ...prevState,
